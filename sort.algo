@@ -1,0 +1,36 @@
+PROCEDURE swap(VAR x, VAR y:INTEGER)
+VAR
+    tmp:INTEGER
+BEGIN
+    tem := x
+    x := y
+    y := tem
+END
+
+
+ALGORITHM insertion_sort
+VAR
+    set  : ARRAY_OF INTEGER[10];
+    i,j , temp : INTEGER
+BEGIN
+    i:=0
+    WHILE (i<set.length)
+        j:=i+1
+        WHILE(j>0)  
+            IF (arr[j] < arr[j-1]) THEN
+                swap(arr[j],arr[j-1])
+            END_IF
+            j--
+        END_WHILE
+        i++ 
+        
+    END_WHILE
+
+    
+
+
+
+
+
+
+END
